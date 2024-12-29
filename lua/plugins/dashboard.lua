@@ -18,7 +18,7 @@ return {
     
     local telescope = require("telescope.builtin")
     local opts = {
-      theme = "doom",
+	  theme = "doom",
       hide = {
         statusline = false, -- Don't enable, messes up lualine
       },

@@ -9,6 +9,7 @@ vim.keymap.set("n", "<S-Tab>", "<<", {desc="Outdent"})
 -- Keys to switch between adjacent buffers 
 vim.keymap.set("n" ,"<S-Right>","<cmd>bnext<cr>",{desc="Switch to right buffer"})
 vim.keymap.set("n" ,"<S-Left>","<cmd>bprev<cr>",{desc="Switch to right buffer"})
+vim.keymap.set("n" ,"<S-D>","<cmd>bw<cr>",{desc="Wipeout current buffer"})
 
 -- Yank to system clipboard 
 vim.keymap.set("n", "<leader>y", '"+y')

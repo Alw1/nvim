@@ -1,12 +1,6 @@
---[[
-TODO LIST:
-
--- Command to open & close file tree when q is pressed
--- IDK research useful shit later
-
-
-
-]]--
-
--- idk what the fuck this is, delete later
 vim.api.nvim_create_autocmd("BufEnter", { command = [[set formatoptions-=cro]] })
+
+-- vim.api.nvim_create_autocmd('TextYankPost', {
+--         group    = 'bufcheck',
+--         pattern  = '*',
+--         callback = function() vim.highlight.on_yank{timeout=500} end })

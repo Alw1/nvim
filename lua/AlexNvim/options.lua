@@ -17,7 +17,7 @@ opt.shiftwidth = 4
 opt.tabstop = 4 
 
 -- Syncs Neovim an OS clipboards to make copy/pasting easier
-vim.o.clipboard = 'unnamedplus'
+--vim.o.clipboard = 'unnamedplus'
 --vim.schedule(function()
 --	opt.clipboard = "unamedplus"
 --end)
