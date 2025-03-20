@@ -6,6 +6,8 @@ return {
 	"neanias/everforest-nvim",
 	"EdenEast/nightfox.nvim",
 	"projekt0n/github-nvim-theme",
+	"comfysage/evergarden",
+	"rose-pine/neovim",
 	"catppuccin/nvim",
 
 	-- Plugin to remember last picked theme 
