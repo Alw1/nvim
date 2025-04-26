@@ -1,6 +1,6 @@
 local opt = vim.opt
 
-vim.opt.termguicolors = true
+opt.termguicolors = true
 
 -- Enable numbers on side
 opt.number = true

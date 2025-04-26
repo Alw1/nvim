@@ -16,6 +16,3 @@ vim.keymap.set("n", "<leader>y", '"+y')
 vim.keymap.set("v", "<leader>y", '"+y')
 vim.keymap.set("n", "<leader>y", '"+Y')
 vim.keymap.set("n", "<leader>yy", '"+yy')
-
--- Alternate keybind for esc cause my escape key is jammed
-vim.keymap.set("i", "jk", '<esc>')
