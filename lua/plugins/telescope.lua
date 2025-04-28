@@ -34,6 +34,7 @@ return {
 				  find_command = {
 					"rg",
 					"--files",
+					"--follow",
 					"--hidden",
 					"--glob=!**/.git/*",
 					"--glob=!**/.idea/*",

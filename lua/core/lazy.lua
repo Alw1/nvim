@@ -16,4 +16,3 @@ vim.opt.rtp:prepend(lazypath)
 
 -- Looks in plugin directory for plugins
 require("lazy").setup("plugins", {})
-

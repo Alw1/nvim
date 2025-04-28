@@ -4,16 +4,18 @@ return {
 	"rebelot/kanagawa.nvim",
 	"sho-87/kanagawa-paper.nvim",
 	"neanias/everforest-nvim",
-	"EdenEast/nightfox.nvim",
 	"projekt0n/github-nvim-theme",
+	"EdenEast/nightfox.nvim",
 	"comfysage/evergarden",
 	"rose-pine/neovim",
 	"catppuccin/nvim",
+	'everviolet/nvim',
+	-- "daschw/leaf", -- Broken?
 
 	-- Plugin to remember last picked theme 
 	"raddari/last-color.nvim",
 
 	version = false,
 	lazy = false,
-	priority = 1000, -- make sure to load this before all the other start plugins
+	priority = 1000,
 }
