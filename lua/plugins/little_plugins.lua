@@ -1,9 +1,3 @@
--- A grab bag of smaller plugins.
---
--- `romainl/vim-cool`, `rcarriga/nvim-notify` and `mrcjkb/haskell-tools.nvim`
--- need no explicit setup: vim-cool works on load, notify configures itself on
--- first use, and haskell-tools sets itself up through its ftplugin for Haskell
--- filetypes.
 local pack = require("plugins.util")
 
 pack.add({
@@ -18,7 +12,6 @@ pack.add({
 	pack.gh("nvim-tree/nvim-web-devicons"), -- used by oil and trouble
 })
 
--- CSV viewer (also toggled per-file from lua/core/commands.lua).
 require("csvview").setup({
 	parser = { comments = { "#", "//" } },
 	keymaps = {
@@ -31,7 +24,6 @@ require("csvview").setup({
 	},
 })
 
--- File explorer as a buffer.
 require("oil").setup({
 	view_options = {
 		show_hidden = true,
@@ -39,7 +31,6 @@ require("oil").setup({
 })
 vim.keymap.set("n", "-", "<cmd>Oil<cr>", { desc = "Open parent directory" })
 
--- Git gutter signs + hunk keymaps.
 require("gitsigns").setup({
 	signs = {
 		add = { text = "│" },
@@ -63,7 +54,6 @@ require("gitsigns").setup({
 
 require("nvim-autopairs").setup({})
 
--- Diagnostics / quickfix list UI.
 require("trouble").setup({})
 vim.keymap.set("n", "<leader>xx", "<cmd>Trouble diagnostics toggle<cr>", { desc = "Diagnostics (Trouble)" })
 vim.keymap.set("n", "<leader>xX", "<cmd>Trouble diagnostics toggle filter.buf=0<cr>", { desc = "Buffer Diagnostics (Trouble)" })

@@ -1,7 +1,5 @@
 local pack = require("plugins.util")
 
--- Rebuild parsers after the plugin is installed or updated (replaces lazy's
--- `build = ":TSUpdate"`). Registered before `add()` so it catches first install.
 vim.api.nvim_create_autocmd("PackChanged", {
 	callback = function(ev)
 		local name, kind = ev.data.spec.name, ev.data.kind
@@ -14,8 +12,6 @@ vim.api.nvim_create_autocmd("PackChanged", {
 	end,
 })
 
--- Pinned to `master`: the config below uses the classic `nvim-treesitter.configs`
--- API, which does not exist on the rewritten `main` branch (the new default).
 pack.add({
 	{ src = pack.gh("nvim-treesitter/nvim-treesitter"), version = "master" },
 })

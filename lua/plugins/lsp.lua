@@ -1,9 +1,3 @@
--- Completion + LSP activation.
---
--- LSP servers are configured the modern way: one file per server in the
--- top-level `lsp/` directory (see `:help lsp-config`), enabled here with
--- `vim.lsp.enable()`. Server *binaries* are expected on $PATH — provided by
--- Nix (flake / home-manager), not installed by Mason.
 local pack = require("plugins.util")
 
 pack.add({
@@ -18,7 +12,6 @@ pack.add({
 local cmp = require("cmp")
 local luasnip = require("luasnip")
 
--- Servers to enable; each has a matching `lsp/<name>.lua` config file.
 local servers = {
 	"jsonls",
 	"yamlls",
@@ -34,8 +27,6 @@ local servers = {
 	"vhdl_ls",
 }
 
--- Advertise nvim-cmp's extra completion capabilities to every server.
--- `vim.lsp.config('*', ...)` is merged into all server configs.
 vim.lsp.config("*", {
 	capabilities = require("cmp_nvim_lsp").default_capabilities(),
 })

@@ -7,5 +7,6 @@ pack.add({
 })
 
 require("remote-sshfs").setup({
-	-- Refer to remote-sshfs' documentation, or leave empty for defaults.
+	-- Refer to the configuration section below
+	-- or leave empty for defaults
 })
